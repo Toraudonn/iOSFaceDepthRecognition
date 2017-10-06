@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "c1e23363b4e8d0b0a9ec0d6a2a20958e"
+build_time: [1507167817, 549537000]
+inputs:
+  "/Users/haruyaishikawa/Documents/2. Vision/cameraTest/cameraTest/ViewController.swift": [1507167817, 0]
+  "/Users/haruyaishikawa/Documents/2. Vision/cameraTest/cameraTest/SCNVector3+Distance.swift": [1506761444, 0]
+  "/Users/haruyaishikawa/Documents/2. Vision/cameraTest/cameraTest/AppDelegate.swift": [1507167817, 0]

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="cameraTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zsP-i4-of7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-IM-kel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWo-D4-q8g">
+                                <rect key="frame" x="162" y="586" width="51" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="Cyr-tZ-kPI"/>
+                                    <constraint firstAttribute="height" constant="61" id="OkM-uY-bKG"/>
+                                </constraints>
+                                <state key="normal" image="obj"/>
+                                <connections>
+                                    <action selector="touchButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Ffd-cE-HMP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ym6-IM-kel" firstAttribute="bottom" secondItem="AGl-I9-X1P" secondAttribute="bottom" id="1Cf-no-PlV"/>
+                            <constraint firstItem="AGl-I9-X1P" firstAttribute="bottom" secondItem="jWo-D4-q8g" secondAttribute="bottom" constant="20" id="Obv-gq-fUf"/>
+                            <constraint firstItem="Ym6-IM-kel" firstAttribute="top" secondItem="zsP-i4-of7" secondAttribute="top" id="cHb-mM-IE1"/>
+                            <constraint firstItem="jWo-D4-q8g" firstAttribute="centerX" secondItem="zsP-i4-of7" secondAttribute="centerX" id="ih6-Qr-M2F"/>
+                            <constraint firstItem="Ym6-IM-kel" firstAttribute="trailing" secondItem="AGl-I9-X1P" secondAttribute="trailing" id="su4-ci-Mam"/>
+                            <constraint firstItem="Ym6-IM-kel" firstAttribute="leading" secondItem="AGl-I9-X1P" secondAttribute="leading" id="unk-Oo-rkS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AGl-I9-X1P"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="jWo-D4-q8g" id="w6C-J7-dSk"/>
+                        <outlet property="sceneView" destination="Ym6-IM-kel" id="joZ-9H-RiD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="obj" width="51" height="61"/>
+    </resources>
+</document>
